@@ -1,0 +1,192 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>挑妈妈 | 沈晏仪</title>
+<link rel="shortcut icon" href="https://www.shenyanyi.top/favicon.ico?v=1720416245563">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.shenyanyi.top/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="挑妈妈 | 沈晏仪 - Atom Feed" href="https://www.shenyanyi.top/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="你问我出生前在做什么
+我答 我在天上挑妈妈
+看见你了
+觉得你特别好
+想做你的孩子
+
+你问我出生前在做什么
+我答 我在天上挑妈妈
+看见你了
+觉得你特别好
+想做你的孩子
+又觉得自己可能没那个运气
+没想到
+第二天一早
+我已经在你肚子里
+..." />
+    <meta name="keywords" content="出生" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://www.shenyanyi.top">
+  <img class="avatar" src="https://www.shenyanyi.top/images/avatar.png?v=1720416245563" alt="">
+  </a>
+  <h1 class="site-title">
+    沈晏仪
+  </h1>
+  <p class="site-description">
+    10后女生的人生记录
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              挑妈妈
+            </h2>
+            <div class="post-info">
+              <span>
+                2011-07-01
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://www.shenyanyi.top/tag/AUStVUKwG/" class="post-tag">
+                  # 出生
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://www.shenyanyi.top/post-images/tiao-ma-ma.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>你问我出生前在做什么<br>
+我答 我在天上挑妈妈<br>
+看见你了<br>
+觉得你特别好<br>
+想做你的孩子</p>
+<!-- more -->
+<p>你问我出生前在做什么<br>
+我答 我在天上挑妈妈<br>
+看见你了<br>
+觉得你特别好<br>
+想做你的孩子<br>
+又觉得自己可能没那个运气<br>
+没想到<br>
+第二天一早<br>
+我已经在你肚子里</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://www.shenyanyi.top" target="_blank"> 
+&nbsp shenyanyi.top</a>
+  <a class="rss" href="https://www.shenyanyi.top/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
